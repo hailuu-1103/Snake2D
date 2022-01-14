@@ -52,9 +52,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BackgroundReset.cs" />
-     <Compile Include="Assets\Scripts\SnakeManager.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\SnakeManager.cs" />
  <Reference Include="UnityEngine">
  <HintPath>E:/Programs/Unity Hub/2020.3.25f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

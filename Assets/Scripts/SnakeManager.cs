@@ -10,7 +10,7 @@ public class SnakeManager : MonoBehaviour
     
     
     private GameObject _obj;
-    private Vector3 originalPosition;
+    private Vector3 _originalPosition;
 
 
     // Start is called before the first frame update
@@ -19,8 +19,8 @@ public class SnakeManager : MonoBehaviour
         _obj = gameObject;
         rig = GetComponent<Rigidbody2D>();
         //Set the speed of the GameObject
-        moveSpeed = 1;
-        originalPosition = _obj.transform.position;
+        moveSpeed = 10;
+        _originalPosition = _obj.transform.position;
     }
 
     // Update is called once per frame
@@ -54,7 +54,6 @@ public class SnakeManager : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("HelloWOrld");
         if (other.tag.Equals("ResetWallRight"))
         {
             _obj.transform.position = new Vector3(-8.54f, transform.position.y, 0);
@@ -71,6 +70,5 @@ public class SnakeManager : MonoBehaviour
         {
             _obj.transform.position = new Vector3(transform.position.x, -4.79f, 0);
         } 
-        
     }
 }

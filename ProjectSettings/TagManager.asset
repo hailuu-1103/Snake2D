@@ -8,6 +8,7 @@ TagManager:
   - ResetWallLeft
   - ResetWallUp
   - ResetWallDown
+  - Enemy
   layers:
   - Default
   - TransparentFX
